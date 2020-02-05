@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Udemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy.csproj": {}
+    "E:\\Udemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy 01 - Calculator\\RestComASP-NETUdemy\\RestComASP-NETUdemy.csproj": {}
   },
   "projects": {
-    "E:\\Udemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy.csproj": {
+    "E:\\Udemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy 01 - Calculator\\RestComASP-NETUdemy\\RestComASP-NETUdemy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Udemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy.csproj",
+        "projectUniqueName": "E:\\Udemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy 01 - Calculator\\RestComASP-NETUdemy\\RestComASP-NETUdemy.csproj",
         "projectName": "RestComASP-NETUdemy",
-        "projectPath": "E:\\Udemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy.csproj",
+        "projectPath": "E:\\Udemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy 01 - Calculator\\RestComASP-NETUdemy\\RestComASP-NETUdemy.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Udemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy\\obj\\",
+        "outputPath": "E:\\Udemy\\RestComASP-NETUdemy\\RestComASP-NETUdemy 01 - Calculator\\RestComASP-NETUdemy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
