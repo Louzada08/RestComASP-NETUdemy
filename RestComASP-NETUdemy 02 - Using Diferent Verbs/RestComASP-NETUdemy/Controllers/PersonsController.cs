@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using RestComASPNETUdemy.Model;
 using RestComASPNETUdemy.Services;
 
@@ -22,6 +23,8 @@ namespace RestComASP_NETUdemy.Controllers
 
     // GET api/values/5
     [HttpGet("{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public IActionResult Get(long id) {
       var person = ipersonService.FindById(id);
       if (person == null) return NotFound();
@@ -36,10 +39,17 @@ namespace RestComASP_NETUdemy.Controllers
     }
 
     // PUT api/values/5
-    [HttpPut("{id}")]
-    public IActionResult Put(long id, [FromBody] Person person) {
-      if (person == null) return BadRequest();
-      return new ObjectResult(ipersonService.Create(person));
+    [HttpPut]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public IActionResult Put([FromBody] Person person) {
+      if (person == null)
+        return BadRequest();
+      if(!ipersonService.Exist(person.Id))
+        return NotFound();
+
+      return new ObjectResult(ipersonService.Update(person));
     }
 
     // DELETE api/values/5
@@ -48,5 +58,6 @@ namespace RestComASP_NETUdemy.Controllers
       ipersonService.Delete(id);
       return NoContent();
     }
+
   }
 }
